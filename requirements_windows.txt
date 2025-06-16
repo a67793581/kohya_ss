@@ -3,3 +3,4 @@ tensorboard
 tensorflow>=2.16.1
 onnxruntime-gpu==1.17.1
 -r requirements.txt
+requests>=2.32.4 # not directly required, pinned by Snyk to avoid a vulnerability
