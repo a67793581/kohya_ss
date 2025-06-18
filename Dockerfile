@@ -3,7 +3,7 @@ ARG UID=1000
 ARG VERSION=EDGE
 ARG RELEASE=0
 
-FROM python:3.10-slim as build
+FROM python:3.13.5-slim as build
 
 # RUN mount cache for multi-arch: https://github.com/docker/buildx/issues/549#issuecomment-1788297892
 ARG TARGETARCH
@@ -50,7 +50,7 @@ RUN --mount=type=cache,id=apt-$TARGETARCH$TARGETVARIANT,sharing=locked,target=/v
     CC="cc -mavx2" pip install -U --force-reinstall pillow-simd; \
     fi
 
-FROM python:3.10-slim as final
+FROM python:3.13.5-slim as final
 
 ARG TARGETARCH
 ARG TARGETVARIANT
