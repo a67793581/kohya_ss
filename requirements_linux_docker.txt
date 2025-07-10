@@ -2,3 +2,6 @@ xformers>=0.0.20
 bitsandbytes==0.43.0
 accelerate==0.25.0
 tensorboard
+protobuf>=4.25.8 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.4 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
