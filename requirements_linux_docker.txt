@@ -2,3 +2,4 @@ xformers>=0.0.20
 bitsandbytes==0.43.0
 accelerate==0.25.0
 tensorboard
+werkzeug>=3.1.5 # not directly required, pinned by Snyk to avoid a vulnerability
