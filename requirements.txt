@@ -16,7 +16,7 @@ lycoris_lora==2.2.0.post3
 omegaconf==2.3.0
 onnx==1.16.1
 prodigyopt==1.0
-protobuf==3.20.3
+protobuf==5.29.6
 open-clip-torch==2.20.0
 opencv-python==4.7.0.68
 prodigyopt==1.0
@@ -33,3 +33,4 @@ wandb==0.15.11
 scipy==1.11.4
 # for kohya_ss library
 -e ./sd-scripts # no_verify leave this to specify not checking this a verification stage
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
